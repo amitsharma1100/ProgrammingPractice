@@ -1,23 +1,20 @@
-Write a program that prints a multiplication table for numbers up to 12.
-
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 int main()
-{
-	int x,i,a;
+{	
+	int x,i,a;	
 	printf("enter the no :- ");
-	scanf("%d",x);
-	if(x<1 || x>12)
-	{
-		printf("the no is not between 1 and 12");
-		return 0;
-	}
+	scanf("%d",x);	
+	if(0<x<13)
+	{	
 	for(i=1;i<11;i++)
-	{
+		{
 		a=x*i;
 		printf("%d x %d = %d",x,i,a);
-	}
+		}
+		return 0;
+	}	
+	printf("The no is no between 1 and 12");
 	return 0;
 }
-
