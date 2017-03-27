@@ -1,1 +1,16 @@
 Write a function that combines two lists by alternatingly taking elements, e.g. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
+
+public static int[] odd(int[] a,b)
+{
+  int n= a.length+b.length;
+  int c[]= new int[n];
+  for(int i=0;i<a.length;i++)
+  {
+    c[i]=a[i];
+  }
+  for(i=0;i<b.length;i++)
+  {
+    c[i+a.length]=b[i]; 
+  }
+  return c;
+}
