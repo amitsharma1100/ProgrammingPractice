@@ -1,11 +1,13 @@
 Write a function that returns the elements on odd positions in a list.
 
-int odd(int *a,int n)
+public static int[] odd(int[] a)
 {
-  int i;
+  int n= a.length;
   n=n/2;
-  for(i=0;i<n;i+2)
+  int b[]= new int[n];
+  for(int i=0;i<n;i++)
   {
-    printf("%d\n",a[2i+1]);
+    b[i]=a[2i+1];
   }
+  return b;
 }
